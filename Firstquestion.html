@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <div class = "container"> 
+        <a href = "WEBSITE.html"> Home </a>
+        <a href = "Firstquestion.html"> Questions </a>
+    </div>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="question.css">
+        <link rel="stylesheet" href = "/css/question.css">
+    </head>
+</br></br>
+
+    <h2 class = "answer">Answer the Questions below to continue</h2>
+</br></br>
+    <p>
+    <form>
+  
+
+
+    <form>
+		<h3> What is the purpose of your pc</h3>
+		<input type = "radio" id = "pcgame" name = "purpose" value = "gaming">
+		<label for ="pcgame"> I will primarily be gaming with my computer</label> <br>
+		<input type = "radio" id = "pcwork" name = "purpose" value = "workstation">
+		<label for = "pcwork"> I will be using my computer as a workstation (photoshop, video editing, office work)</label>
+        </label>
+
+    </form>
+    <form>
+
+        <h3>What is your Price Range?</h3>
+        <input type = "radio" id = "cheap" name = "budget" value = "0 - 1000">
+        <label for = "cheap">$0 - $1000</label> 
+        <input type = "radio" id = "medium" name = "budget" value = "1000 - 2000">
+        <label for = "medium"> $1000 - $2000</label>
+    </form>
+
+</p>
+
+    <button class = "btn" id = "final" onclick = "checkingbtns()"> Submit </button>
+    <p id="output"></p>
+</html>
+
+<script>
+
+var ch = document.getElementsByName('budget');
+for (var i = ch.length; i--;) {
+    ch[i].onchange = function() {
+        budget = this.value;
+    }
+}
+
+var ch = document.getElementsByName('purpose');
+for (var i = ch.length; i--;) {
+    ch[i].onchange = function() {
+        purpose = this.value;
+    }
+}
+
+var ch = document.getElementsByName('pc/laptop');
+for (var i = ch.length; i--;) {
+    ch[i].onchange = function() {
+        pclaptop = this.value;
+    }
+}
+
+
+function checkingbtns() {
+if (budget == "0 - 1000" && purpose == "gaming"){
+    document.getElementById("final").onclick = function () {
+        window.location.href = 'computers.html';
+    };
+}
+
+if (budget == "1000 - 2000" && purpose == "gaming"){
+    document.getElementById("final").onclick = function () {
+        window.location.href = 'computers2000.html';
+    };
+}
+
+if (budget == "0-1000" && purpose == 'workstation'){
+    document.getElementById("final").onclick = function () {
+        window.location.href = 'computers.html';
+    };
+}
+
+if (budget == "1000 - 2000" && purpose == "workstation"){
+    document.getElementById("final").onclick = function () {
+        window.location.href = 'computers2000.html';
+    };
+}
+}
+
+</script>

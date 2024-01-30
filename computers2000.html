@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <div class = "container"> 
+        <a href = "WEBSITE.html"> Home </a>
+        <a href = "Firstquestion.html"> Questions </a>
+    </div>
+</br></br></br>
+    <h3 id = "cpu"></h3>
+    <a  id = "cpulink"><button
+        class="button-1">Buy Here</button></a>
+    <h3 id = "mobo"></h3>
+    <a id = "mobolink"><button
+        class="button-1">Buy Here</button></a>
+    <h3 id = "ram"></h3>
+    <a id = "ramlink"><button
+        class="button-1">Buy Here</button></a></a>
+    <h3 id = "storage"></h3>
+    <a id = "storagelink"><button
+        class="button-1">Buy Here</button></a></a>
+    <h3 id = "gpu"></h3>
+    <a id = "gpulink"><button
+        class="button-1">Buy Here</button></a>
+    <h3 id = "case"></h3>
+    <a id = "caselink"><button
+        class="button-1">Buy Here</button></a></a>
+    <h3 id = "psu"></h3>
+    <a id = psulink><button
+        class="button-1">Buy Here</button></a></a>
+    <h3 id = "net"></h3>    
+    
+    <button class = "otheroption" onclick = "switchPC()"> Other Option</button>
+
+    <style>
+        .container {
+	list-style: none;
+	background-color: rgb(29, 197, 189);
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex-direction:row;
+}
+.container a {
+	text-decoration: none;
+	padding: 15px;
+	color: white;
+}
+.container a:hover {
+	background-color:rgb(46, 223, 214);
+}
+
+@media all and (max-width: 600px) { 
+
+.container {
+display:flex;
+flex-direction: column;
+}
+h3{
+text-align: center;
+}
+.container a{
+text-align: center;
+
+
+}
+}
+
+body {
+    background: linear-gradient(-45deg, #23d5ab, #ddeff1);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.button-1{ 
+    display:inline-block;
+    position:absolute;
+    left: 1045px;
+    bottom:50px;
+}
+  .button-1{background-color: #2ca1e4;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #66c1f5;
+}
+.otheroption{
+    background-color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 5px solid rgb(32, 216, 191);
+  border-radius: 15px;
+  
+  }
+
+  .otheroption {
+    transition-duration: 0.4s;
+  }
+  
+  .otheroption:hover {
+    background-color: rgb(32, 216, 191);
+    color: white;
+  }
+
+  h3{font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+    width: 300px;
+    border: 10px solid rgb(32, 216, 191);
+    padding: 40px;
+    margin: auto;
+    background-color:white;
+  }
+    </style>
+
+    <script>
+
+      let firstpc = {
+        cpu:"CPU: Ryzen 7 5800x",
+        motherboard: "Motherboard: Asus ROG STRIX B550-F GAMING ",
+        ram:"Memory: Corsair Vengeance LPX 32 GB (2 x 16GB)",
+        storage:"Storage: Samsung 970 Evo Plus 2 TB M.2-2280 NVME Solid State Drive",
+        gpu:"GPU: Gigabyte GeForce RTX 3080 12GB LHR 12 GB GAMING OC Video Card",
+        case:"CASE: Corsair 4000D Airflow ATX Mid Tower Case",
+        psu:"PSU: Corsair RMx (2021) 850 W 80+ Gold Certified Fully Modular ATX",
+        net:"Total Price: $2000 USD",
+        
+      }
+
+      let firstpclinks = {
+        cpu: "https://www.amazon.ca/dp/B0815XFSGK?psc=1&th=1&linkCode=gs2&tag=pcp0f-20",
+        mobo:"https://www.newegg.com/asus-rog-strix-b550-f-gam-wif/p/N82E16813119311?Item=N82E16813119311&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ASID=https%3a%2f%2fpcpartpicker.com%2f&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-0.xcfb5wup_X9YUIBKpLNw",
+        ram: "https://www.newegg.com/corsair-32gb-288-pin-ddr4-sdram/p/N82E16820236606?Item=N82E16820236606&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ASID=https%3a%2f%2fpcpartpicker.com%2f&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-Nc_zlqI_Dy_r7PwoRtO2jg",
+        storage: "https://www.amazon.ca/dp/B07MFZXR1B?psc=1&th=1&linkCode=gs2&tag=pcp0f-20",
+        gpu: "https://www.newegg.com/gigabyte-geforce-rtx-3080-gv-n3080gaming-oc-12gd/p/N82E16814932489?Item=N82E16814932489&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ASID=https%3a%2f%2fpcpartpicker.com%2f&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-jiTuWEbD4qebZfOvoIRk5g",
+        case: "https://www.amazon.ca/dp/B08C7BGV3D?psc=1&th=1&linkCode=gs2&tag=pcp0f-20",
+        psu: "https://www.amazon.ca/Corsair-RM850x-Modular-Certified-Warranty/dp/B015YEI8JG/ref=sr_1_2?keywords=Corsair+RMx+Series+%282021%29%2C+RM850x%2C+850+Watt%2C+GOLD%2C+Fully+Modular+Power+Supply+%28CP-9020200-NA%29&linkCode=gs3&qid=1655252047&sr=8-2",
+    }
+
+    let secondpc = {
+        cpu:"CPU: Ryzen 5 5600x",
+        motherboard: "Motherboard: MSI MAG B550 TOMAHAWK ATX",
+        ram:"Memory: Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4-3200",
+        storage:"Storage: Samsung 970 Evo Plus 1 TB M.2-2280 NVME Solid State Drive",
+        gpu:"GPU: Gigabyte GeForce RTX 3070 Ti 8 GB GAMING OC",
+        case:"CASE: Corsair 4000D Airflow ATX",
+        psu:"PSU: 	Corsair RM (2021) 750 W 80+ Gold Certified Fully Modular",
+        net:"Total Price: $1500 USD",
+    }
+
+    let secondpclinks = {
+      cpu: "https://www.newegg.com/amd-ryzen-5-5600x/p/N82E16819113666?Item=N82E16819113666&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ASID=https%3a%2f%2fpcpartpicker.com%2f&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-Uefb67WeZgWywNu9gO_pZQ",
+        ram: "https://www.bhphotovideo.com/c/product/1568696-REG/msi_b550tmhwk_mag_b550_tomahawk_am4.html",
+        storage: "https://www.amazon.ca/dp/B0143UM4TC?psc=1&th=1&linkCode=gs2&tag=pcp0f-20",
+        gpu: "https://www.amazon.ca/dp/B097G7RBSZ?psc=1&th=1&linkCode=gs2&tag=pcp0f-20",
+        case: "https://www.amazon.ca/dp/B08C7BGV3D?psc=1&th=1&linkCode=gs2&tag=pcp0f-20",
+        psu: "https://www.amazon.ca/dp/B093NL61FB?psc=1&th=1&linkCode=gs2&tag=pcp0f-20",
+        motherboard: "https://www.bhphotovideo.com/c/product/1568696-REG/msi_b550tmhwk_mag_b550_tomahawk_am4.html",
+    }
+
+        curpc = 0;
+
+document.getElementById("cpu").innerHTML = firstpc.cpu;
+document.getElementById("mobo").innerHTML = firstpc.motherboard;
+document.getElementById("ram").innerHTML = firstpc.ram;
+document.getElementById("storage").innerHTML = firstpc.storage;
+document.getElementById("gpu").innerHTML = firstpc.gpu;
+document.getElementById("case").innerHTML = firstpc.case;
+document.getElementById("psu").innerHTML = firstpc.psu;
+document.getElementById("net").innerHTML = firstpc.net;
+document.getElementById("cpulink").href = firstpclinks.cpu;
+document.getElementById("mobolink").href = firstpclinks.mobo;
+document.getElementById("ramlink").href = firstpclinks.ram;
+document.getElementById("storagelink").href = firstpclinks.storage;
+document.getElementById("gpulink").href = firstpclinks.gpu;
+document.getElementById("caselink").href = firstpclinks.case;
+document.getElementById("psulink").href = firstpclinks.psu;
+
+function switchPC() {
+    if (curpc == 0){
+        document.getElementById("cpu").innerHTML = secondpc.cpu;
+document.getElementById("mobo").innerHTML = secondpc.motherboard;
+document.getElementById("ram").innerHTML = secondpc.ram;
+document.getElementById("storage").innerHTML = secondpc.storage;
+document.getElementById("gpu").innerHTML = secondpc.gpu;
+document.getElementById("case").innerHTML = secondpc.case;
+document.getElementById("psu").innerHTML = secondpc.psu;
+document.getElementById("net").innerHTML = secondpc.net;
+document.getElementById("cpulink").href = secondpclinks.cpu;
+document.getElementById("mobolink").href = secondpclinks.motherboard;
+document.getElementById("ramlink").href = secondpclinks.ram;
+document.getElementById("storagelink").href = secondpclinks.storage;
+document.getElementById("gpulink").href = secondpclinks.gpu;
+document.getElementById("caselink").href = secondpclinks.case;
+document.getElementById("psulink").href = secondpclinks.psu;
+curpc = 1;}
+
+else {
+  document.getElementById("cpu").innerHTML = firstpc.cpu;
+document.getElementById("mobo").innerHTML = firstpc.motherboard;
+document.getElementById("ram").innerHTML = firstpc.ram;
+document.getElementById("storage").innerHTML = firstpc.storage;
+document.getElementById("gpu").innerHTML = firstpc.gpu;
+document.getElementById("case").innerHTML = firstpc.case;
+document.getElementById("psu").innerHTML = firstpc.psu;
+document.getElementById("net").innerHTML = firstpc.net;
+document.getElementById("cpulink").href = firstpclinks.cpu;
+document.getElementById("mobolink").href = firstpclinks.mobo;
+document.getElementById("ramlink").href = firstpclinks.ram;
+document.getElementById("storagelink").href = firstpclinks.storage;
+document.getElementById("gpulink").href = firstpclinks.gpu;
+document.getElementById("caselink").href = firstpclinks.case;
+document.getElementById("psulink").href = firstpclinks.psu;
+curpc = 0;
+}
+}
+    </script>

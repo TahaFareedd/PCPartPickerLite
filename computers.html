@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <div class = "container"> 
+        <a href = "WEBSITE.html"> Home </a>
+        <a href = "Firstquestion.html"> Questions </a>
+    </div>
+    <script src="computer.js" defer></script>
+
+  </br></br></br>
+  <h3 id = "cpu"></h3>
+  <a  id = "cpulink"><button
+      class="button-1">Buy Here</button></a>
+  <h3 id = "mobo"></h3>
+  <a id = "mobolink"><button
+      class="button-1">Buy Here</button></a>
+  <h3 id = "ram"></h3>
+  <a id = "ramlink"><button
+      class="button-1">Buy Here</button></a></a>
+  <h3 id = "storage"></h3>
+  <a id = "storagelink"><button
+      class="button-1">Buy Here</button></a></a>
+  <h3 id = "gpu"></h3>
+  <a id = "gpulink"><button
+      class="button-1">Buy Here</button></a>
+  <h3 id = "case"></h3>
+  <a id = "caselink"><button
+      class="button-1">Buy Here</button></a></a>
+  <h3 id = "psu"></h3>
+  <a id = psulink><button
+      class="button-1">Buy Here</button></a></a>
+  <h3 id = "net"></h3>      
+    
+    <button class = "otheroption" onclick = "switchPC()"> Other Option</button>
+
+    <style>
+        .container {
+	list-style: none;
+	background-color: rgb(29, 197, 189);
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex-direction:row;
+}
+.container a {
+	text-decoration: none;
+	padding: 15px;
+	color: white;
+}
+.container a:hover {
+	background-color:rgb(46, 223, 214);
+}
+
+@media all and (max-width: 600px) { 
+
+.container {
+display:flex;
+flex-direction: column
+}
+h3{
+text-align: center;
+}
+.container a{
+text-align: center;
+
+
+}
+}
+
+body {
+    background: linear-gradient(-45deg, #23d5ab, #ddeff1);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .button-1{ 
+    display:inline-block;
+    position:absolute;
+    left: 1045px;
+    bottom:50px;
+}
+  .button-1{background-color: #2ca1e4;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #66c1f5;
+}
+.otheroption{
+    background-color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 5px solid rgb(32, 216, 191);
+  border-radius: 15px;
+  
+  }
+
+  .otheroption {
+    transition-duration: 0.4s;
+  }
+  
+  .otheroption:hover {
+    background-color: rgb(32, 216, 191);
+    color: white;
+  }
+
+  h3{font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+    width: 300px;
+    border: 10px solid rgb(32, 216, 191);
+    padding: 40px;
+    margin: auto;
+    background-color:white;
+  }
+
+
+    </style>
+

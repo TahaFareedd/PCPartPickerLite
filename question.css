@@ -1,0 +1,97 @@
+
+
+
+.container {
+	list-style: none;
+	background-color: rgb(29, 197, 189);
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex-direction:row;
+}
+.container a {
+	text-decoration: none;
+	padding: 15px;
+	color: white;
+}
+.container a:hover {
+	background-color:rgb(46, 223, 214);
+}
+
+@media all and (max-width: 600px) { 
+
+.container {
+display:flex;
+flex-direction: column
+}
+h3{
+text-align: center;
+}
+.container a{
+text-align: center;
+
+
+}
+}
+
+body {
+    background: linear-gradient(-45deg, #23d5ab, #ddeff1);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  h2  {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 300px;
+    border: 10px solid rgb(32, 216, 191);
+    padding: 40px;
+    margin: auto;
+  }
+
+  form {
+    width: 300px;
+    border: 10px solid rgb(32, 216, 191);
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+    margin: auto;
+    background-color:white;
+  }
+  button {
+    background-color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 5px solid rgb(32, 216, 191);
+  border-radius: 15px;
+  
+  }
+
+  button {
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: rgb(32, 216, 191);
+    color: white;
+  }
